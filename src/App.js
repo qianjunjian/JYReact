@@ -1,10 +1,10 @@
 import './App.css';
-import MyForm from "./Form/pages/myForm";
+import ReduxPage from "./Redux/pages/ReduxPage";
 
 function App() {
   return (
     <div className="App">
-      <MyForm />
+      <ReduxPage />
     </div>
   );
 }

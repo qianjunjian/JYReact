@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware } from "../redux/";
+import { createStore, applyMiddleware } from "../../Redux/redux";
 import isPromise from "is-promise";
 
 // 定义修改规则
@@ -7,13 +7,13 @@ function countReducer(state = 0, action) {
         case "ADD":
             return state + 1;
         case "MINUS":
-            return state - action.payload || 1;
+            return state - (action.payload || 1);
         default:
             return state;
     }
 }
 
-const store = createStore(combineReducers({aaa: countReducer}), applyMiddleware(thunk, promise, logger));
+const store = createStore(combineReducers({count: countReducer}), applyMiddleware(thunk, promise, logger));
 
 function combineReducers(reducers) {
     const reducerKeys = Object.keys(reducers)

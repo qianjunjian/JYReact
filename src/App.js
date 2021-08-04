@@ -1,10 +1,10 @@
 import './App.css';
-import Container from "./Router/pages/container";
+import Routes from "./saga/routes/index";
 
 function App() {
   return (
     <div className="App">
-      <Container />
+      <Routes />
     </div>
   );
 }

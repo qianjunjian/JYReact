@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from "./ReactRedux/store/index";
-import { Provider } from "./ReactRedux/react-redux/index";
+// import store from "./ReactRedux/store/index";
+// import { Provider } from "./ReactRedux/react-redux/index";
+import store from "./saga/store";
+import {Provider} from "react-redux";
 
 ReactDOM.render(
   <Provider store={store}>

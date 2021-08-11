@@ -21,8 +21,8 @@
 // reportWebVitals();
 
 
-import ReactDOM from "./minReact/react-dom";
-import Component from "./minReact/Component";
+import ReactDOM from "./min2React/react-dom";
+import Component from "./min2React/Component";
 
 function FunctionComponent({name}) {
   return (
@@ -57,7 +57,6 @@ const jsx = (
     <a href="https://www.baidu.com/">123</a>
     <FunctionComponent name="function" />
     <ClassComponent name="class" />
-    <FragmentComponent />
   </div>
 );
 

@@ -21,16 +21,9 @@
 // reportWebVitals();
 
 
-import ReactDOM from "./min2React/react-dom";
-import Component from "./min2React/Component";
-
-function FunctionComponent({name}) {
-  return (
-    <div className="border">
-      <p>{name}</p>
-    </div>
-  );
-}
+import ReactDOM from "./min3React/react-dom";
+import Component from "./min3React/Component";
+import { useState } from "./min3React/hooks";
 
 class ClassComponent extends Component {
   render() {
@@ -42,12 +35,21 @@ class ClassComponent extends Component {
   }
 }
 
-function FragmentComponent(props) {
+function FunctionComponent(props) {
+
+  const [count, setCount] = useState(0);
+
   return (
-    <>
-      <h1>111</h1>
-      <h1>222</h1>
-    </>
+    <div className="border">
+      <p>{props.name}</p>
+      <p>{count}</p>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}>
+        click
+      </button>
+    </div>
   );
 }
 

@@ -21,9 +21,9 @@
 // reportWebVitals();
 
 
-import ReactDOM from "./min3React/react-dom";
-import Component from "./min3React/Component";
-import { useState } from "./min3React/hooks";
+import ReactDOM from "./min4React/react-dom";
+import Component from "./min4React/Component";
+import { useState } from "./min4React/hooks";
 
 class ClassComponent extends Component {
   render() {
